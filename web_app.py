@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title('Uber pickups in NYC')
+
 def scrape_website(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
